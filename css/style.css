@@ -130,3 +130,25 @@ header ul li a {
   margin: 5px 0;
   transform: scale(0.6);
 }
+
+/* Smartphone com tela 800px */
+@media screen and (max-width: 800px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+/* Smartphone com tela 500px */
+@media screen and (max-width: 550px) {
+  nav {
+    display: flex;
+  }
+}
+
+/* Smartphone com tela 350px */
+@media screen and (max-width: 350px) {
+  nav {
+    display: flex;
+  }
+}

@@ -6,5 +6,5 @@ Criei está página simples para colocar em prática os conhecimentos com as tec
 - CSS3
 - JAVASCRIPT
 
-<img src="./img/pepsi-pagee.gif" />
+<img src="./img/pepsi-page.gif" />
 

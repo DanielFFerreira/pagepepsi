@@ -15,13 +15,16 @@
         <img src="img/logo.png" alt="logo pepsi" class="logo"/>
       </a>
 
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">What´s New</a></li>
-        <li><a href="#">Newsletter</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">What´s New</a></li>
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
     </header>
 
     <div class="content">
@@ -41,15 +44,14 @@
 
     <ul class="thumb">
       <li>
-        <img src="img/pepsi001.png" alt="" onclick="imgSlider('img/pepsi001.png'); changeBgColor('#0062be'); changeLata('img/pepsi001.png')">
+        <img src="img/pepsi001.png" alt="" onclick="changeHeader('#18578b'); imgSlider('img/pepsi001.png'); changeBgColor('#0062be'); changeLata('img/pepsi001.png')">
+      </li>
+      <li>
+        <img src="img/pepsi002.png" alt="" onclick="changeHeader('#cf1027'); imgSlider('img/pepsi002.png'); changeBgColor('#e60c2c'); changeLata('img/pepsi002.png')">
       </li>
 
       <li>
-        <img src="img/pepsi002.png" alt="" onclick="imgSlider('img/pepsi002.png'); changeBgColor('#e60c2c'); changeLata('img/pepsi002.png')">
-      </li>
-
-      <li>
-        <img src="img/pepsi003.png" alt="" onclick="imgSlider('img/pepsi003.png'); changeBgColor('#1e1e1e'); changeLata('img/pepsi003.png')">
+        <img src="img/pepsi003.png" alt="" onclick="changeHeader('#0f1213'); imgSlider('img/pepsi003.png'); changeBgColor('#1e1e1e'); changeLata('img/pepsi003.png')">
       </li>
     </ul>
 
@@ -64,6 +66,10 @@
   <script type="text/javascript">
     function imgSlider(anything){
       document.querySelector('.thumb').src = anything;
+    }
+    function changeHeader(color) {
+      const header = document.querySelector('header');
+      header.style.background = color;
     }
     function changeBgColor(color){
       const section = document.querySelector('.section');
